@@ -1,0 +1,29 @@
+{
+    "name": "ali-ur-rehman-portfolio",
+    "version": "1.0.0",
+    "description": "Premium portfolio website for Ali Ur Rehman - React Native Developer and Mobile Solutions Engineer",
+    "main": "index.html",
+    "scripts": {
+        "start": "python -m http.server 8000",
+        "serve": "npx http-server -p 8000"
+    },
+    "keywords": [
+        "portfolio",
+        "react-native",
+        "mobile-developer",
+        "javascript",
+        "html5",
+        "css3",
+        "responsive-design"
+    ],
+    "author": "Ali Ur Rehman <aliurrehman605@gmail.com>",
+    "license": "MIT",
+    "homepage": "https://github.com/your-username/portfolio",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/your-username/portfolio.git"
+    },
+    "bugs": {
+        "url": "https://github.com/your-username/portfolio/issues"
+    }
+}
