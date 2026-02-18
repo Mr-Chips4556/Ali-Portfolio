@@ -23,7 +23,7 @@ class ProjectsManager {
         const savedProjects = localStorage.getItem('portfolioProjects');
 
         // Force reload with new image paths (remove this after first load)
-        const forceReload = !localStorage.getItem('imagesUpdated');
+        const forceReload = !localStorage.getItem('imagesUpdatedV3');
 
         if (savedProjects && !forceReload) {
             this.projects = JSON.parse(savedProjects);
@@ -48,75 +48,85 @@ class ProjectsManager {
                         'Multi-language support (English/Arabic/Urdu)'
                     ],
                     technologies: ['React Native', 'Firebase', 'Google Maps API', 'Push Notifications', 'AsyncStorage'],
-                    thumbnail: 'pics/home.png',
+                    thumbnail: 'pics/project1/cover.png',
                     screenshots: [
-                        'pics/splash.png',
-                        'pics/home.png',
-                        'pics/prayers.png',
-                        'pics/community.png',
-                        'pics/ism.png',
-                        'pics/School.png'
+                        'pics/project1/splash.png',
+                        'pics/project1/home.png',
+                        'pics/project1/prayers.png',
+                        'pics/project1/community.png',
+                        'pics/project1/ism.png',
+                        'pics/project1/School.png'
                     ],
                     projectUrl: null,
                     createdAt: new Date('2024-01-15').toISOString()
                 },
                 {
-                    id: 'ecommerce-app',
-                    title: 'E-Commerce Mobile App',
-                    shortDescription: 'A modern e-commerce mobile application with advanced features for seamless shopping experience.',
-                    fullDescription: 'A full-featured e-commerce mobile application built with React Native, offering users a seamless shopping experience with advanced search, personalized recommendations, and secure payment processing.',
-                    problemStatement: 'Traditional e-commerce platforms lacked mobile-first design and personalized shopping experiences, resulting in poor user engagement and conversion rates.',
-                    solutionApproach: 'Created a mobile-first e-commerce solution with AI-powered recommendations, advanced search capabilities, and streamlined checkout process to maximize user engagement and sales conversion.',
+                    id: 'xenscape-app',
+                    title: 'Xenscape',
+                    shortDescription: 'Meditation App - A comprehensive meditation and mindfulness application designed to help users achieve inner peace and mental wellness.',
+                    fullDescription: 'Xenscape is a beautifully crafted meditation app that guides users through their mindfulness journey. Built with React Native, it offers personalized meditation sessions, breathing exercises, and wellness tracking to help users reduce stress and improve mental health.',
+                    problemStatement: 'Modern life creates stress and anxiety, but people struggle to find time and guidance for effective meditation and mindfulness practices.',
+                    solutionApproach: 'Created an intuitive meditation app with guided sessions, customizable timers, progress tracking, and personalized recommendations to make meditation accessible and engaging for everyone.',
                     features: [
-                        'Advanced product search and filtering',
-                        'AI-powered product recommendations',
-                        'Secure payment gateway integration',
-                        'Real-time order tracking',
-                        'Wishlist and favorites management',
-                        'Push notifications for deals and updates',
-                        'Social media integration for sharing',
-                        'Multi-currency and multi-language support'
+                        'Guided meditation sessions for all levels',
+                        'Customizable meditation timers and ambient sounds',
+                        'Progress tracking and mindfulness streaks',
+                        'Breathing exercises and relaxation techniques',
+                        'Sleep stories and calming soundscapes',
+                        'Daily mindfulness reminders and quotes',
+                        'Offline meditation sessions',
+                        'Personal wellness journal and mood tracking'
                     ],
-                    technologies: ['React Native', 'Node.js', 'MongoDB', 'Stripe API', 'Redux', 'Socket.io'],
-                    thumbnail: 'https://via.placeholder.com/400x300/E53E3E/FFFFFF?text=E-Commerce+App',
+                    technologies: ['React Native', 'Node.js', 'MongoDB', 'Audio Processing', 'Push Notifications', 'Analytics'],
+                    thumbnail: 'pics/Project2/1.png',
                     screenshots: [
-                        'https://via.placeholder.com/300x600/E53E3E/FFFFFF?text=Product+Catalog',
-                        'https://via.placeholder.com/300x600/C53030/FFFFFF?text=Shopping+Cart',
-                        'https://via.placeholder.com/300x600/9C2A2A/FFFFFF?text=Order+Tracking'
+                        'pics/Project2/2.png',
+                        'pics/Project2/3.png',
+                        'pics/Project2/4.png',
+                        'pics/Project2/8.png',
+                        'pics/Project2/9.png',
+                        'pics/Project2/10.png',
+                        'pics/Project2/11.png',
+                        'pics/Project2/12.png',
+                        'pics/Project2/13.png',
+                        'pics/Project2/14.png',
+                        'pics/Project2/15.jpg'
                     ],
-                    projectUrl: 'https://example-ecommerce.com',
+                    projectUrl: null,
                     createdAt: new Date('2024-03-10').toISOString()
                 },
                 {
-                    id: 'fitness-tracker',
-                    title: 'Fitness Tracker Pro',
-                    shortDescription: 'A comprehensive fitness tracking application with workout plans, nutrition tracking, and progress analytics.',
-                    fullDescription: 'Fitness Tracker Pro is a comprehensive health and fitness application that helps users achieve their fitness goals through personalized workout plans, nutrition tracking, and detailed progress analytics.',
-                    problemStatement: 'Users struggled to maintain consistent fitness routines due to lack of personalized guidance, progress tracking, and motivation, leading to abandoned fitness goals.',
-                    solutionApproach: 'Developed an all-in-one fitness solution with AI-powered workout recommendations, comprehensive nutrition tracking, and gamification elements to keep users motivated and engaged.',
+                    id: 'dermascans-ai',
+                    title: 'Dermascans-AI',
+                    shortDescription: 'AI-powered dermatology application that uses machine learning to analyze skin conditions and provide preliminary assessments.',
+                    fullDescription: 'Dermascans-AI is an innovative mobile application that leverages artificial intelligence and computer vision to help users monitor their skin health. The app provides preliminary skin analysis, tracks changes over time, and offers educational resources about dermatological conditions.',
+                    problemStatement: 'Early detection of skin conditions is crucial for health, but access to dermatological expertise is limited and expensive, leading to delayed diagnosis and treatment.',
+                    solutionApproach: 'Developed an AI-powered mobile solution that uses advanced image recognition and machine learning algorithms to provide preliminary skin analysis, making dermatological screening more accessible and affordable.',
                     features: [
-                        'Personalized workout plans based on fitness level',
-                        'Comprehensive nutrition and calorie tracking',
-                        'Progress analytics with detailed charts',
-                        'Social features for community motivation',
-                        'Integration with wearable devices',
-                        'Custom exercise library with video demonstrations',
-                        'Goal setting and achievement tracking',
-                        'Offline workout mode'
+                        'AI-powered skin condition analysis using computer vision',
+                        'Photo-based skin health monitoring and tracking',
+                        'Progress tracking with before/after comparisons',
+                        'Educational resources about skin conditions',
+                        'Reminder system for regular skin checks',
+                        'Secure cloud storage for medical images',
+                        'Integration with healthcare providers',
+                        'Detailed analysis reports and recommendations'
                     ],
-                    technologies: ['React Native', 'Firebase', 'HealthKit', 'Google Fit API', 'Chart.js', 'AsyncStorage'],
-                    thumbnail: 'https://via.placeholder.com/400x300/38A169/FFFFFF?text=Fitness+Tracker',
+                    technologies: ['React Native', 'Computer Vision', 'Cloud Storage', 'Node.js', 'Firebase'],
+                    thumbnail: 'pics/project3/1.png',
                     screenshots: [
-                        'https://via.placeholder.com/300x600/38A169/FFFFFF?text=Workout+Plans',
-                        'https://via.placeholder.com/300x600/2F855A/FFFFFF?text=Progress+Charts',
-                        'https://via.placeholder.com/300x600/276749/FFFFFF?text=Nutrition+Log'
+                        'pics/project3/2.jpg',
+                        'pics/project3/3.jpg',
+                        'pics/project3/4.png',
+                        'pics/project3/5.png',
+                        'pics/project3/6.png'
                     ],
-                    projectUrl: 'https://fitness-tracker-pro.com',
+                    projectUrl: null,
                     createdAt: new Date('2024-02-20').toISOString()
                 }
             ];
             this.saveProjects();
-            localStorage.setItem('imagesUpdated', 'true');
+            localStorage.setItem('imagesUpdatedV3', 'true');
         }
     }
 
@@ -205,8 +215,8 @@ class ProjectsManager {
             projectsGrid.innerHTML = this.projects.map(project => `
                 <div class="project-card" onclick="projectsManager.openProjectDetails('${project.id}')">
                     <img src="${project.thumbnail}" alt="${project.title}" class="project-thumbnail" 
-                         onerror="console.error('Failed to load thumbnail:', '${project.thumbnail}'); this.src='https://via.placeholder.com/400x300/4A5568/FFFFFF?text=No+Image'"
-                         onload="console.log('Successfully loaded thumbnail:', '${project.thumbnail}')">
+                         onerror="console.error('Failed to load thumbnail for ${project.title}:', '${project.thumbnail}'); this.src='https://via.placeholder.com/400x300/4A5568/FFFFFF?text=No+Image'"
+                         onload="console.log('Successfully loaded thumbnail for ${project.title}:', '${project.thumbnail}')">
                     <div class="project-card-content">
                         <h3 class="project-card-title">${project.title}</h3>
                         <p class="project-card-desc">${project.shortDescription}</p>
@@ -460,6 +470,8 @@ class ProjectsManager {
     clearCacheAndReload() {
         localStorage.removeItem('portfolioProjects');
         localStorage.removeItem('imagesUpdated');
+        localStorage.removeItem('imagesUpdatedV2');
+        localStorage.removeItem('imagesUpdatedV3');
         this.loadProjects();
         this.renderProjects();
         if (this.isAdmin) {
